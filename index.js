@@ -5,5 +5,13 @@ function driversWithRevenueOver(drivers, revenue) {
   });
 }
 
-
+function driverNamesWithRevenueOver(drivers, revenue) {
+  let names = []
+  drivers.filter(function(driver) {
+    if (driver.revenue > revenue) {
+      names.push(driver.name);
+    }
+  })
+  return names;
+}
 
