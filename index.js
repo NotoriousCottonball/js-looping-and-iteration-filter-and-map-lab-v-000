@@ -17,6 +17,6 @@ function exactMatch(drivers, match) {
  }
  
  function exactMatchToList(drivers, match) {
-  matches = exactMatch(drivers, attValuePair);
+  matches = exactMatch(drivers, match);
   return matches.map(d => `${d.name}`);
 }
